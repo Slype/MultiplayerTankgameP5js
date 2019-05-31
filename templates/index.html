@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tankgame | WH Scripts</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="index.css" rel="stylesheet" type="text/css"/>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+		<script>
+            // Wall configuration
+			let walls = [
+				{x: 90, y: 80, w: 20, h: 120},
+				{x: 490, y: 80, w: 20, h: 120},
+				{x: 60, y: 480, w: 120, h: 20},
+				{x: 420, y: 480, w: 120, h: 20},
+				{x: 200, y: 280, w: 200, h: 20},
+				{x: 290, y: 300, w: 20, h: 80}
+			];
+            // Proxy settings
+			let appHost = "192.168.1.8";
+			let appPort = "80";
+		</script>
+
+		<script src="classes.js" type="text/javascript"></script>
+		<script src="scoreboard.js" type="text/javascript"></script>
+		<script src="collision.js" type="text/javascript"></script>
+		<script src="main.js" type="text/javascript"></script>
+        <script src="socket.js" type="text/javascript"></script>
+
+    </head>
+    <body>
+		<div id="canvasContainer">
+			<div id="scoreboard"></div>
+		</div>
+        <p id="text">
+            <!-- Text to inform the players on how to connect -->
+            Deltag i spelet genom att besöka [ip] på din telefon!<br>
+            Tänk på att låsa telefonens rotation i vertikalt/porträtt!
+        </p>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+	height: 100vh;
+	width: 100vw;
+	background-color: #3d3d3d;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#canvasContainer {
+	width: fit-content;
+	height: fit-content;
+	position: relative;
+	padding-right: 200px;
+	margin-left: 200px;
+}
+
+canvas {
+	border: 1px solid white;
+}
+
+#scoreboard {
+	width: 200px;
+	height: calc(100% - 4px);
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.row {
+	color: white;
+	font-family: monospace;
+	font-size: 15px;
+	width: 100%;
+	padding: 0 10px;
+	height: 30px;
+	display: flex;
+	margin-top: 5px;
+}
+
+.row p:nth-child(1) {
+	width: 75%;
+	height: 100%;
+}
+
+.row p:nth-child(2) {
+	width: 25%;
+	height: 100%;
+
+}
+
+#text {
+	width: 100vw;
+	color: white;
+	font-family: monospace;
+	text-align: center;
+	font-size: 16px;
+}
